@@ -15,12 +15,12 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private String [] images = {"https://images.static-collegedunia.com/public/college_data/images/campusimage/1410847670gndu4.jpg",
-            "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/06/02/Pictures/_683dc2aa-6642-11e8-a998-12ee0acfa260.jpg",
-            "http://online.gndu.ac.in/assets/images/logo/photo-gallery-18s.jpg"};
 
-    public ViewPagerAdapter(Context context) {
+    private String[] images;
+
+    public ViewPagerAdapter(Context context , String[] images) {
         this.context = context;
+        this.images = images;
     }
 
     @Override
